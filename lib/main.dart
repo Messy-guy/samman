@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:myproffesional/screens/Signinpage.dart';
 import 'package:myproffesional/screens/introPage.dart';
+import 'package:myproffesional/screens/verification/otpverify.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: introPage(),
+      home: Otpverify(),
     );
   }
 }
