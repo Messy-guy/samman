@@ -12,8 +12,8 @@ class Signinpage extends StatelessWidget {
             Stack(
               children: [
                 Image.asset("assets/images/background.png"),
-                Padding(
-                  padding: const EdgeInsets.only(top: 120, left: 20),
+                const Padding(
+                  padding: EdgeInsets.only(top: 120, left: 20),
                   child: Text("Login",
                       style: TextStyle(
                           fontSize: 36,
@@ -26,7 +26,7 @@ class Signinpage extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 170, left: 20),
                   child: Row(
                     children: [
-                      Text("Don't have an account?",
+                      const Text("Don't have an account?",
                           style: TextStyle(
                               fontSize: 17,
                               fontWeight: FontWeight.w600,
@@ -40,7 +40,7 @@ class Signinpage extends StatelessWidget {
                           minimumSize: Size.zero,
                           tapTargetSize: MaterialTapTargetSize.values[1],
                         ),
-                        child: Text('Sign Up',
+                        child: const Text('Sign Up',
                             style: TextStyle(
                                 fontSize: 15,
                                 fontWeight: FontWeight.w600,
@@ -56,7 +56,7 @@ class Signinpage extends StatelessWidget {
                   child: Stack(
                     children: [
                       Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                               color: Color.fromARGB(251, 253, 248, 230),
                               borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(60),
@@ -64,7 +64,7 @@ class Signinpage extends StatelessWidget {
                               )),
                           height: 650,
                           width: MediaQuery.of(context).size.width,
-                          child: Column(
+                          child: const Column(
                             children: [],
                           )),
                       Column(
@@ -74,7 +74,7 @@ class Signinpage extends StatelessWidget {
                             child: TextFormField(
                               keyboardType: TextInputType.emailAddress,
                               autofocus: false,
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                 labelText: "Email/Phone number",
                                 labelStyle: TextStyle(
                                   color: Colors.black,
@@ -103,7 +103,7 @@ class Signinpage extends StatelessWidget {
                               keyboardType: TextInputType.visiblePassword,
                               obscureText: true,
                               autofocus: false,
-                              decoration: InputDecoration(
+                              decoration: const InputDecoration(
                                 labelText: "Password",
                                 labelStyle: TextStyle(
                                   color: Colors.black,
@@ -132,17 +132,17 @@ class Signinpage extends StatelessWidget {
                             ),
                             child: TextButton(
                                 onPressed: () {},
-                                child: Text(
+                                child: const Text(
                                   "Forgot Password?",
                                   style: TextStyle(
                                     color: Color(0xFF0B2399),
                                   ),
                                 )),
                           ),
-                          SizedBox(height: 50),
+                          const SizedBox(height: 50),
                           Container(
                             decoration: BoxDecoration(
-                              gradient: RadialGradient(
+                              gradient: const RadialGradient(
                                 center: Alignment.center,
                                 radius: 4.0,
                                 focal: Alignment.center,
@@ -159,7 +159,7 @@ class Signinpage extends StatelessWidget {
                                   color: Colors.black.withOpacity(0.2),
                                   spreadRadius: 1,
                                   blurRadius: 5,
-                                  offset: Offset(0, 2),
+                                  offset: const Offset(0, 2),
                                 ),
                               ],
                             ),
@@ -168,14 +168,14 @@ class Signinpage extends StatelessWidget {
                               child: InkWell(
                                 onTap: () {},
                                 child: Container(
-                                  padding: EdgeInsets.symmetric(
+                                  padding: const EdgeInsets.symmetric(
                                       horizontal: 140.0, vertical: 15),
-                                  child: Text(
+                                  child: const Text(
                                     "LogIn",
                                     style: TextStyle(
                                       fontFamily: "Lora",
                                       fontSize: 16,
-                                      color: const Color.fromARGB(255, 9, 9, 9),
+                                      color: Color.fromARGB(255, 9, 9, 9),
                                       fontWeight: FontWeight.w600,
                                       letterSpacing: 1.5,
                                     ),
@@ -184,23 +184,23 @@ class Signinpage extends StatelessWidget {
                               ),
                             ),
                           ),
-                          SizedBox(height: 20),
-                          Text(
+                          const SizedBox(height: 20),
+                          const Text(
                             "Or continue with",
                             style: TextStyle(fontFamily: "Lora"),
                           ),
-                          SizedBox(height: 20),
+                          const SizedBox(height: 20),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.g_mobiledata),
+                                icon: const Icon(Icons.g_mobiledata),
                                 iconSize: 37,
                               ),
                               IconButton(
                                 onPressed: () {},
-                                icon: Icon(Icons.facebook),
+                                icon: const Icon(Icons.facebook),
                                 iconSize: 35,
                               ),
                             ],
