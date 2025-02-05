@@ -34,7 +34,9 @@ class Signinpage extends StatelessWidget {
                               fontFamily: "Lora",
                               color: Colors.black)),
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/signup");
+                        },
                         style: TextButton.styleFrom(
                           padding: EdgeInsets.zero,
                           minimumSize: Size.zero,
@@ -131,7 +133,9 @@ class Signinpage extends StatelessWidget {
                               left: 210.0,
                             ),
                             child: TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(context, "/otp");
+                                },
                                 child: const Text(
                                   "Forgot Password?",
                                   style: TextStyle(

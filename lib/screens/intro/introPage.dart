@@ -35,7 +35,9 @@ class introPage extends StatelessWidget {
             child: Column(
               children: [
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, "/signin");
+                    },
                     style: TextButton.styleFrom(
                       padding:
                           EdgeInsets.symmetric(vertical: 20, horizontal: 20),
@@ -65,7 +67,9 @@ class introPage extends StatelessWidget {
                   height: 25,
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, "/signin");
+                    },
                     style: TextButton.styleFrom(
                       padding:
                           EdgeInsets.symmetric(vertical: 20, horizontal: 20),
@@ -95,7 +99,9 @@ class introPage extends StatelessWidget {
                   height: 25,
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, "/signin");
+                    },
                     style: TextButton.styleFrom(
                       padding:
                           EdgeInsets.symmetric(vertical: 20, horizontal: 20),
@@ -125,7 +131,9 @@ class introPage extends StatelessWidget {
                   height: 25,
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, "/signin");
+                    },
                     style: TextButton.styleFrom(
                       padding:
                           EdgeInsets.symmetric(vertical: 20, horizontal: 20),

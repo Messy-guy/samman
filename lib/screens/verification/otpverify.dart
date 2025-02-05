@@ -15,7 +15,7 @@ class Otpverify extends StatelessWidget {
               padding: const EdgeInsets.only(top: 300.0),
               child: Column(
                 children: [
-                  Text(
+                  const Text(
                     'Verification',
                     style: TextStyle(
                       fontSize: 30,
@@ -23,7 +23,7 @@ class Otpverify extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Text(
+                  const Text(
                     "4-digit code has been sent to your email/phone",
                     style: TextStyle(
                       fontSize: 12,
@@ -31,24 +31,24 @@ class Otpverify extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   OtpTextField(
                     numberOfFields: 4,
-                    fillColor: Color(0xFFFDFFF5),
+                    fillColor: const Color(0xFFFDFFF5),
                     filled: true,
                     fieldWidth: 50,
                     fieldHeight: 50,
                     borderWidth: 0,
                     borderRadius: BorderRadius.circular(6),
-                    margin: EdgeInsets.all(9),
-                    focusedBorderColor: Color(0xFFFDFFF5),
+                    margin: const EdgeInsets.all(9),
+                    focusedBorderColor: const Color(0xFFFDFFF5),
                     showFieldAsBox: true,
                     keyboardType: TextInputType.number,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Didn't get the code?",
+                      const Text("Didn't get the code?",
                           style: TextStyle(
                             fontSize: 14,
                             fontFamily: 'Lora',
@@ -57,10 +57,10 @@ class Otpverify extends StatelessWidget {
                       TextButton(
                           onPressed: () {},
                           style: TextButton.styleFrom(
-                            padding: EdgeInsets.all(4),
+                            padding: const EdgeInsets.all(4),
                             minimumSize: Size.zero,
                           ),
-                          child: Text(
+                          child: const Text(
                             'Resend it',
                             style: TextStyle(
                               fontSize: 14,
@@ -71,7 +71,7 @@ class Otpverify extends StatelessWidget {
                           )),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Container(
                     decoration: BoxDecoration(
                       gradient: const RadialGradient(

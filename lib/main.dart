@@ -2,7 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:myproffesional/screens/Signinpage.dart';
-import 'package:myproffesional/screens/introPage.dart';
+import 'package:myproffesional/screens/Signuppage.dart';
+import 'package:myproffesional/screens/intro/introPage.dart';
+import 'package:myproffesional/screens/intro/splashscreen.dart';
 import 'package:myproffesional/screens/verification/otpverify.dart';
 
 void main() {
@@ -14,9 +16,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(
+        brightness: Brightness.light,
+      ),
+      darkTheme: ThemeData(brightness: Brightness.dark),
       debugShowCheckedModeBanner: false,
-      home: Otpverify(),
+      home: const Splashscreen(),
+      routes: {
+        '/signin': (context) => const Signinpage(),
+        '/otp': (context) => const Otpverify(),
+        '/signup': (context) => Signuppage(),
+      },
     );
   }
 }
